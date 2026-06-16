@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { z } from "zod";
 import { toast } from "sonner";
 import { SectionHeading } from "./SectionHeading";
-import { Github, Linkedin, Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Send } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 import emailjs from "@emailjs/browser";
 const schema = z.object({
   name: z.string().trim().min(1, "Name required").max(100),
@@ -13,8 +14,8 @@ const schema = z.object({
 
 const contactLinks = [
   { icon: Mail, label: "Email", value: "gaurav94174@gmail.com", href: "mailto:gaurav94174@gmail.com", target: "_blank" },
-  { icon: Linkedin, label: "LinkedIn", value: "/in/gaurav94", href: "https://www.linkedin.com/in/gaurav94", target: "_blank" },
-  { icon: Github, label: "GitHub", value: "@Gaurav012221842", href: "https://github.com/Gaurav012221842", target: "_blank" },
+  { icon: LinkedinIcon, label: "LinkedIn", value: "/in/gaurav94", href: "https://www.linkedin.com/in/gaurav94", target: "_blank" },
+  { icon: GithubIcon, label: "GitHub", value: "@Gaurav012221842", href: "https://github.com/Gaurav012221842", target: "_blank" },
   { icon: MapPin, label: "Location", value: "Bangalore, India", href: "#", target: "_blank" },
 ];
 

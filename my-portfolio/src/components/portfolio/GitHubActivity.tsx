@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionHeading } from "./SectionHeading";
-import { Github } from "lucide-react";
+import { GithubIcon } from "./BrandIcons";
 
 function generateGrid() {
   const weeks = 26;
@@ -50,7 +50,7 @@ export function GitHubActivity() {
           <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-3">
               <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-brand to-accent-cyan">
-                <Github className="h-5 w-5 text-background" />
+                <GithubIcon className="h-5 w-5 text-background" />
               </span>
               <div>
                 <div className="font-display text-base font-semibold">@Gaurav012221842</div>

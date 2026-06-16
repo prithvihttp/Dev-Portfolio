@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { SectionHeading } from "./SectionHeading";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { GithubIcon } from "./BrandIcons";
 import pmImg from "../../assets/projects/project-management.png";
 import plmImg from "../../assets/projects/Windchill.png";
 import cryptoImg from "../../assets/projects/crypto-tracker.png";
@@ -121,7 +122,7 @@ export function Projects() {
                     rel="noreferrer"
                     className="inline-flex items-center gap-2 rounded-lg border px-3 py-2 text-sm font-medium transition hover:border-cyan-400"
                   >
-                    <Github className="h-4 w-4" />
+                    <GithubIcon className="h-4 w-4" />
                     Source Code
                   </a>
 

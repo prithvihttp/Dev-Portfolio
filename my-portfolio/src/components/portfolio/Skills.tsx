@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import { SectionHeading } from "./SectionHeading";
 import { Cloud, Code, Database, Layers, Wrench } from "lucide-react";
 
-type Skill = { name: string; level: number };
-
 const groups = [
   {
     title: "Backend",

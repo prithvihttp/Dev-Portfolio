@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { FolderGit2, GraduationCap, Github as GithubIcon, Calendar } from "lucide-react";
+import { FolderGit2, GraduationCap, Calendar } from "lucide-react";
+import { GithubIcon } from "./BrandIcons";
 
 const stats = [
   { icon: FolderGit2, value: "15+", label: "Projects Completed" },

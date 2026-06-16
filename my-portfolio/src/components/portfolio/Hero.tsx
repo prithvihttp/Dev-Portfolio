@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import { ArrowRight, Download, Mail, Github, Linkedin, MapPin } from "lucide-react";
+import { ArrowRight, Download, Mail, MapPin } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 import heroImage from "../../assets/hero-illustration.png";
 import resumeFile from "../../assets/Gaurav_resume.pdf";
 
@@ -82,10 +83,10 @@ export function Hero() {
 
           <div className="mt-8 flex items-center gap-4">
             <a href="https://github.com/Gaurav012221842" target="_blank" rel="noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="GitHub">
-              <Github className="h-5 w-5" />
+              <GithubIcon className="h-5 w-5" />
             </a>
             <a href="https://www.linkedin.com/in/gaurav/94" target="_blank" rel="noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="LinkedIn">
-              <Linkedin className="h-5 w-5" />
+              <LinkedinIcon className="h-5 w-5" />
             </a>
             <a href="mailto:gaurav94174@gmail.com" target="_blank" rel="noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="Email">
               <Mail className="h-5 w-5" />
