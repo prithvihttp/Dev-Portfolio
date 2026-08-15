@@ -24,46 +24,50 @@ export function Contact() {
   const [loading, setLoading] = useState(false);
 
   const onSubmit = async (e: { preventDefault: () => void; }) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const result = schema.safeParse(form);
+    const result = schema.safeParse(form);
 
-  if (!result.success) {
-    toast.error(result.error.issues[0]?.message ?? "Invalid input");
-    return;
-  }
+    if (!result.success) {
+      toast.error(result.error.issues[0]?.message ?? "Invalid input");
+      return;
+    }
 
-  try {
-    setLoading(true);
-    console.log("Service:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
-    console.log("Template:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
-    console.log("Public:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
-    await emailjs.send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      {
-        name: form.name,
-        email: form.email,
-        message: form.message,
-      },
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    );
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    toast.success("Message sent successfully!");
+    if (!serviceId || !templateId || !publicKey) {
+      toast.error("Contact form is not configured. Please try again later.");
+      return;
+    }
 
-    setForm({
-      name: "",
-      email: "",
-      message: "",
-    });
+    try {
+      setLoading(true);
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          // Supports both default EmailJS variables and the existing template names.
+          from_name: form.name,
+          from_email: form.email,
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          reply_to: form.email,
+        },
+        publicKey,
+      );
 
-  } catch (error) {
-    console.error(error);
-    toast.error("Failed to send message");
-  } finally {
-    setLoading(false);
-  }
-};
+      toast.success("Message sent successfully!");
+      setForm({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS failed to send the contact message:", error);
+      toast.error("Message could not be sent. Please email me directly.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section id="contact" className="section-padding relative">
