@@ -3,7 +3,7 @@ import { SectionHeading } from "./SectionHeading";
 import { Quote } from "lucide-react";
 const testimonials = [
     {
-        quote: "Gaurav is an exceptional backend engineer. His grasp of distributed systems and ability to ship reliable services is impressive.",
+        quote: "Prithvi is an exceptional backend engineer. His grasp of distributed systems and ability to ship reliable services is impressive.",
         name: "Engineering Lead",
         role: "Infineon Technologies",
     },
@@ -13,7 +13,7 @@ const testimonials = [
         role: "Enterprise Platform Team",
     },
     {
-        quote: "Whether it's Spring Boot internals, Kafka pipelines, or AWS infra — Gaurav consistently delivers thoughtful, scalable solutions.",
+        quote: "Whether it's Spring Boot internals, Kafka pipelines, or AWS infra — Prithvi consistently delivers thoughtful, scalable solutions.",
         name: "Tech Mentor",
         role: "Open Source Collaborator",
     },

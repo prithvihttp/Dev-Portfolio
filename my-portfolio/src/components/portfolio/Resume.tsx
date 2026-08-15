@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Download, FileText } from "lucide-react";
-import resumeFile from "../../assets/Gaurav_resume.pdf";
+import resumeFile from "../../assets/Prithvi_resume.pdf";
 
 export function Resume() {
   return (
@@ -26,7 +26,7 @@ export function Resume() {
             </p>
             <a
               href={resumeFile}
-              download="Gaurav_Kumar_Resume.pdf"
+              download="Prithvi_Raaj_Resume.pdf"
               className="mt-7 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-brand to-brand-glow px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] glow"
             >
               <Download className="h-4 w-4" /> Download Resume (PDF)

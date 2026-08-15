@@ -38,7 +38,7 @@ export function Navbar() {
           <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-brand to-accent-cyan glow">
             <Code2 className="h-5 w-5 text-background" />
           </span>
-          <span className="gradient-text">Gaurav.dev</span>
+          <span className="gradient-text">PrithviRaj.dev</span>
         </a>
 
         <ul className="hidden items-center gap-1 lg:flex">

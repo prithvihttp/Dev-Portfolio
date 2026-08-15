@@ -3,7 +3,7 @@ import { SectionHeading } from "./SectionHeading";
 import { ExternalLink, Github } from "lucide-react";
 import pmImg from "../../assets/projects/project-management.png";
 import plmImg from "../../assets/projects/Windchill.png";
-import cryptoImg from "../../assets/projects/crypto-tracker.png";
+import cryptoImg from "../../assets/projects/barista.png";
 const projects = [
     {
         title: "AI-Powered Project Management Tool",
@@ -19,8 +19,8 @@ const projects = [
             "Docker",
         ],
         image: pmImg,
-        github: "https://github.com/Gaurav012221842/Project-management",
-        demo: "https://project-management-gk.vercel.app/login",
+        github: "https://www.github.com/prithvihttp/Project-management",
+        demo: "https://project-management-beta-rosy.vercel.app/projects",
     },
     {
         title: "PLM Apps Windchill",
@@ -35,22 +35,22 @@ const projects = [
             "Vector Database",
         ],
         image: plmImg,
-        github: "https://github.com/Gaurav012221842",
+        github: "https://www.github.com/prithvihttp",
         demo: null,
     },
     {
-        title: "CryptoTracker",
-        description: "Cryptocurrency analytics dashboard with real-time market data, interactive charts, filtering, ranking, and multi-currency support.",
+        title: "Barista",
+        description: "Developed a full-stack coffee shop ordering platform using Java, Spring Boot, React.js, and REST APIs, enabling online ordering with real-time three-barista order processing and status tracking.",
         tech: [
             "React",
-            "Chart.js",
+            "Java-Spring Boot",
             "Tailwind CSS",
             "REST APIs",
             "JavaScript",
         ],
         image: cryptoImg,
-        github: "https://github.com/Gaurav012221842/CryptoTracker",
-        demo: "https://crypto-tracker-two-gray.vercel.app/",
+        github: "https://github.com/prithvihttp/Barista",
+        demo: "https://barista-a9rw.vercel.app/cashier",
     },
 ];
 export function Projects() {

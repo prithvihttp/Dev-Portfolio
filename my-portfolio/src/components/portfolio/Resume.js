@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Download, FileText } from "lucide-react";
-import resumeFile from "../../assets/Gaurav_resume.pdf";
+import resumeFile from "../../assets/Prithvi_resume.pdf";
 export function Resume() {
     return (<section id="resume" className="section-padding relative">
       <div className="mx-auto max-w-4xl px-6">
@@ -16,7 +16,7 @@ export function Resume() {
             <p className="mx-auto mt-3 max-w-md text-sm text-muted-foreground md:text-base">
               A concise snapshot of my experience, skills, and impact — ready for your hiring funnel.
             </p>
-            <a href={resumeFile} download="Gaurav_Kumar_Resume.pdf" className="mt-7 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-brand to-brand-glow px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] glow">
+            <a href={resumeFile} download="Prithvi_Raaj_Resume.pdf" className="mt-7 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-brand to-brand-glow px-6 py-3 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.02] glow">
               <Download className="h-4 w-4"/> Download Resume (PDF)
             </a>
           </div>

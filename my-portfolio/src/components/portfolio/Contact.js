@@ -11,9 +11,9 @@ const schema = z.object({
     message: z.string().trim().min(5, "Message too short").max(1000),
 });
 const contactLinks = [
-    { icon: Mail, label: "Email", value: "gaurav94174@gmail.com", href: "mailto:gaurav94174@gmail.com", target: "_blank" },
-    { icon: Linkedin, label: "LinkedIn", value: "/in/gaurav94", href: "https://www.linkedin.com/in/gaurav94", target: "_blank" },
-    { icon: Github, label: "GitHub", value: "@Gaurav012221842", href: "https://github.com/Gaurav012221842", target: "_blank" },
+    { icon: Mail, label: "Email", value: "prithviraj6868@gmail.com", href: "mailto:prithviraj6868@gmail.com", target: "_blank" },
+    { icon: Linkedin, label: "LinkedIn", value: "/in/prithviraj-kumar", href: "https://www.linkedin.com/in/prithviraj-kumar/", target: "_blank" },
+    { icon: Github, label: "GitHub", value: "@prithvihttp", href: "https://www.github.com/prithvihttp", target: "_blank" },
     { icon: MapPin, label: "Location", value: "Bangalore, India", href: "#", target: "_blank" },
 ];
 export function Contact() {

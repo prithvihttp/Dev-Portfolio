@@ -3,8 +3,7 @@ import { SectionHeading } from "./SectionHeading";
 import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "./BrandIcons";
 import pmImg from "../../assets/projects/project-management.png";
-import plmImg from "../../assets/projects/Windchill.png";
-import cryptoImg from "../../assets/projects/crypto-tracker.png";
+import cryptoImg from "../../assets/projects/barista.png";
 
 const projects = [
   {
@@ -22,40 +21,23 @@ const projects = [
       "Docker",
     ],
     image: pmImg,
-    github: "https://github.com/Gaurav012221842/Project-management",
-    demo: "https://project-management-gk.vercel.app/login",
+    github: "https://github.com/prithvihttp/Project-management",
+    demo: "https://project-management-beta-rosy.vercel.app/projects",
   },
   {
-    title: "PLM Apps Windchill",
+    title: "Barista",
     description:
-      "Enterprise AI search platform for Windchill PLM featuring RAG, NLP, vector search, document indexing, caching, observability, and microservices architecture.",
-    tech: [
-      "Java",
-      "Spring Boot",
-      "Kafka",
-      "Redis",
-      "ELK Stack",
-      "RAG",
-      "Vector Database",
-    ],
-    image: plmImg,
-    github: "https://github.com/Gaurav012221842",
-    demo: null,
-  },
-  {
-    title: "CryptoTracker",
-    description:
-      "Cryptocurrency analytics dashboard with real-time market data, interactive charts, filtering, ranking, and multi-currency support.",
+      "Developed a full-stack coffee shop ordering platform using Java, Spring Boot, React.js, and REST APIs, enabling online ordering with real-time three-barista order processing and status tracking.",
     tech: [
       "React",
-      "Chart.js",
+      "Java-Spring Boot",
       "Tailwind CSS",
       "REST APIs",
       "JavaScript",
     ],
     image: cryptoImg,
-    github: "https://github.com/Gaurav012221842/CryptoTracker",
-    demo: "https://crypto-tracker-two-gray.vercel.app/",
+    github: "https://github.com/prithvihttp/Barista",
+    demo: "https://barista-a9rw.vercel.app/cashier",
   },
 ];
 

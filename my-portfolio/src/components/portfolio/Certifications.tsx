@@ -8,21 +8,21 @@ const certs = [
     title: "Generative AI with Large Language Models",
     issuer: "Coursera",
     date: "Jan 2024 – Jul 2024",
-    demo: "https://drive.google.com/file/d/1wZdxDou83Gksk4uOPCQhUdvcSYZHoP8L/view?usp=drive_link",
+    demo: "https://drive.google.com/file/d/1XcFcqcOlUzThX_3P_7f8wv379ITbZ1f5/view?usp=sharing",
   },
   {
     icon: BookOpen,
     title: "Introduction to Large Language Models",
     issuer: "Coursera",
     date: "Jan 2024 – Jul 2024",
-    demo: "https://drive.google.com/file/d/1i28Via0bpPjbvNi0PBaYlyzh40Awn3ec/view?usp=sharing",
+    demo: "https://drive.google.com/file/d/1g5pYx9L3BnthJPBLqr70iEnui6d69QkQ/view?usp=sharing",
   },
   {
     icon: Trophy,
-    title: "LeetCode — 800+ Problems Solved",
+    title: "LeetCode — 200+ Problems Solved",
     issuer: "DSA · DP · Graphs · Trees",
     date: "Ongoing",
-    demo: "https://leetcode.com/u/Gaurav_leetcode6203/",
+    demo: "https://leetcode.com/u/Prithvi_raaj/",
   },
 ];
 
@@ -59,7 +59,7 @@ export function Certifications() {
                   rel="noopener noreferrer"
                   className="mt-3 inline-block text-sm font-medium text-brand hover:text-accent-cyan"
                 >
-                  {c.title === "LeetCode — 800+ Problems Solved" ? "View Profile" : "View Certificate"}
+                  {c.title === "LeetCode — 200+ Problems Solved" ? "View Profile" : "View Certificate"}
                 </a>
               )}
             </motion.div>

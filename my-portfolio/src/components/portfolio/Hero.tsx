@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 import { ArrowRight, Download, Mail, MapPin } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 import heroImage from "../../assets/hero-illustration.png";
-import resumeFile from "../../assets/Gaurav_resume.pdf";
+import resumeFile from "../../assets/Prithvi_resume.pdf";
 
 export function Hero() {
   return (
@@ -30,7 +30,7 @@ export function Hero() {
           </div>
 
           <h1 className="mt-6 font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
-            <span className="block">GAURAV</span>
+            <span className="block">PRITHVIRAJ</span>
             <span className="block gradient-text">KUMAR</span>
           </h1>
 
@@ -68,7 +68,7 @@ export function Hero() {
             </a>
             <a
               href={resumeFile}
-              download="Gaurav_Kumar_Resume.pdf"
+              download="Prithviraj_Kumar_Resume.pdf"
               className="inline-flex items-center gap-2 rounded-xl glass px-5 py-3 text-sm font-semibold hover:bg-secondary/60"
             >
               <Download className="h-4 w-4" /> Download Resume
@@ -82,13 +82,13 @@ export function Hero() {
           </div>
 
           <div className="mt-8 flex items-center gap-4">
-            <a href="https://github.com/Gaurav012221842" target="_blank" rel="noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="GitHub">
+            <a href="https://www.github.com/prithvihttp" target="_blank" rel="noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="GitHub">
               <GithubIcon className="h-5 w-5" />
             </a>
-            <a href="https://www.linkedin.com/in/gaurav94" target="_blank" rel="noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/prithviraj-kumar/" target="_blank" rel="noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="LinkedIn">
               <LinkedinIcon className="h-5 w-5" />
             </a>
-            <a href="mailto:gaurav94174@gmail.com" target="_blank" rel="noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="Email">
+            <a href="mailto:prithviraj6868@gmail.com" target="_blank" rel="noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="Email">
               <Mail className="h-5 w-5" />
             </a>
           </div>
