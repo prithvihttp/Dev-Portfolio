@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import { GithubIcon } from "./BrandIcons";
 import pmImg from "../../assets/projects/project-management.png";
 import cryptoImg from "../../assets/projects/barista.png";
+import urlShortenerImg from "../../assets/projects/urlshortner.png";
 
 const projects = [
   {
@@ -23,6 +24,23 @@ const projects = [
     image: pmImg,
     github: "https://github.com/prithvihttp/Project-management",
     demo: "https://project-management-beta-rosy.vercel.app/projects",
+  },
+   {
+    title: "URL Shortener",
+    description:
+      "Full-stack URL shortening service built with Spring Boot and React, using Neon PostgreSQL for persistent storage and Upstash Redis for high-performance caching and fast URL redirection.",
+    tech: [
+      "Java",
+      "Spring Boot",
+      "React",
+      "TypeScript",
+      "Neon PostgreSQL",
+      "Upstash Redis",
+      "Docker",
+    ],
+    image: urlShortenerImg,
+    github: "https://github.com/prithvihttp/URL-Shortener",
+    demo: "https://url-shortner-psi-sooty.vercel.app/",
   },
   {
     title: "Barista",
