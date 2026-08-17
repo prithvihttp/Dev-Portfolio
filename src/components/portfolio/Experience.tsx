@@ -4,26 +4,27 @@ import { Briefcase } from "lucide-react";
 
 const timeline = [
   {
-    role: "Software Developer",
-    company: "Infineon Technologies",
-    location: "Bengaluru",
-    period: "July 2025 – May 2026",
-    points: [
-      "Developed a RAG-powered chatbot for Windchill PLM workflows using Java, Spring Boot, React, Kafka, and ELK — improved semantic search accuracy by 40%.",
-      "Orchestrated Kafka-driven indexing pipelines with vector search, improving document discovery by 70% across large datasets.",
-      "Optimized backend services through asynchronous processing, indexing strategies, and query tuning, reducing search latency by 35%.",
-    ],
+     role: "Software Developer",
+        company: "HCLTech",
+        location: "Bengaluru",
+        period: "April 2025 – Present",
+        points: [
+            "Developed and enhanced enterprise applications using Java and Spring Boot, focusing on REST APIs, backend services, and scalable application architecture",
+            "Worked with microservices, Kafka, Redis, and database technologies to understand and implement distributed backend systems and asynchronous communication.",
+            "Collaborated on real-world software development workflows, debugging application issues, optimizing backend services, and following Git-based development and deployment practices.",
+        ],
     focus: ["Backend Development", "REST APIs", "System Design", "Microservices", "Cloud"],
   },
   {
     role: "Summer Intern",
-    company: "Cipher Schools",
-    location: "Ludhiana, Punjab",
-    period: "June 2024 – August 2024",
-    points: [
-      "Engineered a high-performance Notes Maker app with React.js using lazy loading and DB optimizations.",
-      "Achieved 40% faster load times, 50% improved query efficiency, and 20% boost in user retention.",
-    ],
+        company: "Gokboru Tech",
+        location: "Ludhiana, Punjab",
+        period: "June 2024 – August 2024",
+        points: [
+            "Developed responsive web applications using HTML, CSS, JavaScript, and React.js, implementing reusable components and modern UI practices.",
+            "Built and deployed a movie website using React.js, integrating API-based movie data and creating an interactive, responsive user experience.",
+            "Strengthened frontend development skills through hands-on projects, debugging, Git-based workflows, and practical implementation of modern web development concepts.",
+        ],
     focus: ["React", "Performance", "Database Optimization"],
   },
 ];
