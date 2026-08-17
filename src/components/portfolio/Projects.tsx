@@ -39,7 +39,7 @@ const projects = [
       "Docker",
     ],
     image: urlShortenerImg,
-    github: "https://github.com/prithvihttp/URL-Shortener",
+    github: "https://github.com/prithvihttp/URL-Shortner",
     demo: "https://url-shortner-psi-sooty.vercel.app/",
   },
   {
